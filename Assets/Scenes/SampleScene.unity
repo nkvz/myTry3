@@ -252,10 +252,12 @@ MonoBehaviour:
   speed: 10
   collar: {fileID: 106208625}
   collarRend: {fileID: 0}
+  camera: {fileID: 963194227}
   spawnPrefab: {fileID: 8340079756083264172, guid: f885fcc71593fd246808c03de9a361d7, type: 3}
   rb: {fileID: 106208630}
   inGround: 0
   jumpPower: 50
+  psPrefab: {fileID: 1725021742170312792, guid: b4f6e4680e7e0d74b93d3b840e8f3f70, type: 3}
 --- !u!1 &163891432
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,10 +388,12 @@ MonoBehaviour:
   speed: 10
   collar: {fileID: 163891432}
   collarRend: {fileID: 0}
+  camera: {fileID: 963194227}
   spawnPrefab: {fileID: 8340079756083264172, guid: f885fcc71593fd246808c03de9a361d7, type: 3}
   rb: {fileID: 163891433}
   inGround: 0
   jumpPower: 300
+  psPrefab: {fileID: 1725021742170312792, guid: b4f6e4680e7e0d74b93d3b840e8f3f70, type: 3}
 --- !u!1 &464917598
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,10 +952,12 @@ MonoBehaviour:
   speed: 10
   collar: {fileID: 1363415562}
   collarRend: {fileID: 0}
+  camera: {fileID: 963194227}
   spawnPrefab: {fileID: 8340079756083264172, guid: f885fcc71593fd246808c03de9a361d7, type: 3}
   rb: {fileID: 1363415563}
   inGround: 0
   jumpPower: 300
+  psPrefab: {fileID: 1725021742170312792, guid: b4f6e4680e7e0d74b93d3b840e8f3f70, type: 3}
   randNum: 0
 --- !u!1 &1497472943
 GameObject:
@@ -1112,7 +1118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1759082049
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1450,10 +1456,12 @@ MonoBehaviour:
   speed: 10
   collar: {fileID: 2071480307}
   collarRend: {fileID: 0}
+  camera: {fileID: 963194227}
   spawnPrefab: {fileID: 8340079756083264172, guid: f885fcc71593fd246808c03de9a361d7, type: 3}
   rb: {fileID: 2071480308}
   inGround: 0
   jumpPower: 300
+  psPrefab: {fileID: 1725021742170312792, guid: b4f6e4680e7e0d74b93d3b840e8f3f70, type: 3}
 --- !u!1001 &2237335630862611120
 PrefabInstance:
   m_ObjectHideFlags: 0

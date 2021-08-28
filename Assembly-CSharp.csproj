@@ -56,13 +56,13 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\__Scripts\UIcontroll.cs" />
     <Compile Include="Assets\__Scripts\ObjectCube.cs" />
     <Compile Include="Assets\__Scripts\ObjectCapsule.cs" />
     <Compile Include="Assets\__Scripts\enums.cs" />
     <Compile Include="Assets\__Scripts\Object.cs" />
     <Compile Include="Assets\__Scripts\ObjectCylinder.cs" />
     <Compile Include="Assets\__Scripts\ObjectSphere.cs" />
-    <Compile Include="Assets\__Scripts\UIcontroll.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

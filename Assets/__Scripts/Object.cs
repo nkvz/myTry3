@@ -8,6 +8,7 @@ public class Object : MonoBehaviour
     public float speed = 10f;
     public GameObject collar;
     public Renderer collarRend;
+    public Camera camera;
 
     [Header("Set In Inspector for Cube")]
     public GameObject spawnPrefab;
@@ -15,6 +16,8 @@ public class Object : MonoBehaviour
     public Rigidbody rb;
     public bool inGround;
     public float jumpPower = 300f;
+    [Header("Set In Inspector for Cylinder")]
+    public GameObject psPrefab;
 
     public void Awake()
     {
@@ -60,10 +63,22 @@ public class Object : MonoBehaviour
 
     public void UltimateCube()
     {
+        RaycastHit hit;
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject spawn = Instantiate<GameObject>(spawnPrefab);
-            spawn.transform.position = this.transform.position;
+            
+            if (Physics.Raycast(ray, out hit))
+            {
+                if(hit.transform.name == "Ground")
+                {
+                    hit.point = new Vector3(hit.point.x, -0.5f, hit.point.z);
+
+                    GameObject spawn = Instantiate<GameObject>(spawnPrefab, hit.point, Quaternion.identity);
+                }
+                
+            }
         }
     }
 
@@ -83,7 +98,10 @@ public class Object : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            GameObject particleSystem = Instantiate<GameObject>(psPrefab);
+            psPrefab.transform.position = this.transform.position;
             Destroy(this.gameObject, 2f);
+            
         }
     }
 
