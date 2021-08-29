@@ -95,11 +95,10 @@ public class Object : MonoBehaviour
 
     public void UltimateCylinder()
     {
-
+        psPrefab.transform.position = this.transform.position;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject particleSystem = Instantiate<GameObject>(psPrefab);
-            psPrefab.transform.position = this.transform.position;
             Destroy(this.gameObject, 2f);
             
         }
